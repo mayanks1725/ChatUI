@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Simple-Chat-UI</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="main_section">
+		<div class="container">
+			<div class="chat_container">
+				<div class="col-sm-3 lg chat_sidebar">
+					<div class="row" style="text-align: center">
+					
+					</div>
+				</div>
+				<!--Ads_sidebar-->
+
+
+				<div class="col-sm-6 message_section">
+					<div class="row" style="background-image:url(data:image/jpeg;base64,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)">
+						<div class="new_message_head">
+							<div class="pull-left">
+								<div class="dropdown">
+									<button class="dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-weixin" aria-hidden="true"></i> Conversations <span class="caret"></span></button>
+									<ul class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenu3">
+										<li>
+											<div id="custom-search-input">
+												<div class="input-group col-md-12">
+													<input type="text" class="  search-query form-control" placeholder="Conversation" />
+													<button class="btn btn-danger" type="button">
+														<span class=" glyphicon glyphicon-search"></span>
+													</button>
+												</div>
+											</div>
+										</li>
+
+										<li role="separator" class="divider"></li>
+
+										<li class="left clearfix conversations">
+											<div class="chat-body clearfix">
+												<div class="header_sec">
+													<strong class="primary-font">Yo McMoney</strong>
+												</div>
+												<div class="contact_sec">
+													<span class="badge pull-right">3</span>
+												</div>
+											</div>
+										</li>
+										<li class="left clearfix conversations">
+											<div class="chat-body clearfix">
+												<div class="header_sec">
+													<strong class="primary-font">Yo McMoney</strong>
+												</div>
+												<div class="contact_sec">
+													<span class="badge pull-right">3</span>
+												</div>
+											</div>
+										</li>
+										<li class="left clearfix conversations">
+											<div class="chat-body clearfix">
+												<div class="header_sec">
+													<strong class="primary-font">Yo McMoney</strong>
+												</div>
+												<div class="contact_sec">
+													<span class="badge pull-right">3</span>
+												</div>
+											</div>
+										</li>
+										<li class="left clearfix conversations">
+											<div class="chat-body clearfix">
+												<div class="header_sec">
+													<strong class="primary-font">Yo McMoney</strong>
+												</div>
+												<div class="contact_sec">
+													<span class="badge pull-right">3</span>
+												</div>
+											</div>
+										</li>
+										<li class="left clearfix conversations">
+											<div class="chat-body clearfix">
+												<div class="header_sec">
+													<strong class="primary-font">Yo McMoney</strong>
+												</div>
+												<div class="contact_sec">
+													<span class="badge pull-right">3</span>
+												</div>
+											</div>
+										</li>
+										<li class="left clearfix conversations">
+											<div class="chat-body clearfix">
+												<div class="header_sec">
+													<strong class="primary-font">Yo McMoney</strong>
+												</div>
+												<div class="contact_sec">
+													<span class="badge pull-right">3</span>
+												</div>
+											</div>
+										</li>
+										<li class="left clearfix conversations">
+											<div class="chat-body clearfix">
+												<div class="header_sec">
+													<strong class="primary-font">Yo McMoney</strong>
+												</div>
+												<div class="contact_sec">
+													<span class="badge pull-right">3</span>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							
+							<div class="pull-right">
+								<div class="dropdown">
+									<button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cogs" aria-hidden="true"></i>  Setting <span class="caret"></span></button>
+									<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Profile</a></li>
+										<li><a href="#">Logout</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--new_message_head-->
+
+						<div class="chat_area">
+							<ul class="list-unstyled">
+								<li class="left clearfix partner_chat">
+									<span class="chat-img1 pull-left">
+                     <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="User Avatar" class="img-circle">
+                  </span>
+										 
+									<div class="chat-body1 clearfix">
+										<p>
+											<span style="color:rgb(107,203,239); display:block">Yo McMoney</span>
+
+											<span style="display:block; padding:5px 0px 5px 0px;">
+												Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
+												from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+												Virginia.
+											</span>
+
+											<span style="font-size:0.85em; color:grey; display:block; float:right;">09:40PM</span>
+										</p>
+									</div>
+								</li>
+
+								<li class="left clearfix partner_chat">
+									<span class="chat-img1 pull-left">
+                  	<img src="https://randomuser.me/api/portraits/women/3.jpg" alt="User Avatar" class="img-circle">
+                  </span>
+
+									<div class="chat-body1 clearfix">
+
+										<p>
+											<span style="display:block; padding:5px 0px 5px 0px;">
+												Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
+												from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+												Virginia.
+											</span>	
+
+											<span style="font-size:0.85em; color:grey; display:block; float:right;">09:40PM</span>
+										</p>
+										
+									</div>
+								</li>
+
+								<li class="left clearfix partner_chat">
+									<span class="chat-img1 pull-left">
+                     <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="User Avatar" class="img-circle">
+                  </span>
+										 
+									<div class="chat-body1 clearfix">
+										<div class="image_chat">
+											<span style="color:rgb(13, 214, 221); display:block">Yo McMoney</span>
+
+											<div class="image_thumb"	style="padding:5px 0px 5px 0px;">
+												<img src="./image1.jpg" class="img-responsive" alt="image1">
+											</div>
+
+											<span style="font-size:0.85em; color:grey; display:block; float:right;">09:40PM</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="left clearfix admin_chat">
+									<span class="chat-img1 pull-right">
+                     <img src="https://randomuser.me/api/portraits/men/37.jpg" alt="User Avatar" class="img-circle">
+                  </span>
+										 
+									<div class="chat-body1 clearfix">
+										<div class="image_chat">
+											<span style="color:rgb(107,203,239); display:block; text-align:right">Yo McMoney</span>
+
+											<div class="image_thumb"	style="padding:5px 0px 5px 0px; display:block;" >
+												<img src="./image1.jpg" class="img-responsive" alt="image1">
+											</div>
+
+											<span style="font-size:0.85em; color:grey; display:block; float:right;">09:40PM</span>
+										</div>
+									</div>
+								</li>
+
+								<li class="left clearfix partner_chat">
+									<span class="chat-img1 pull-left">
+                    <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="User Avatar" class="img-circle">
+                  </span>
+
+									<div class="chat-body1 clearfix">
+										<p>
+											<span style="display:block; padding:5px 0px 5px 0px;">Contrary to popular belief</span>
+
+											<span style="font-size:0.85em; color:grey; display:block; float:right;">09:40PM</span>
+										</p>
+									</div>
+								</li>
+
+								<li class="left clearfix admin_chat">
+									<span class="chat-img1 pull-right">
+                    <img src="https://randomuser.me/api/portraits/men/37.jpg" alt="User Avatar" class="img-circle">
+                  </span>
+
+									<div class="chat-body1 clearfix">
+										<p>
+											<span style="display:block; padding: 5px 0px 5px 0px;">
+												Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
+												from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+												Virginia.
+											</span>	
+
+											<span style="font-size:0.85em; color:grey; display:block; float:right;">09:40PM</span>
+										</p>
+									</div>
+								</li>
+
+								<li class="left clearfix admin_chat">
+									<span class="chat-img1 pull-right">
+                    <img src="https://randomuser.me/api/portraits/men/37.jpg" alt="User Avatar" class="img-circle">
+                  </span>
+
+									<div class="chat-body1 clearfix">
+										<p>
+											<span style="display:block; padding:5px 0px 5px 0px;">Contrary to popular belief.</span>
+
+											<span style="font-size:0.85em; color:rgb(0, 183, 255); display:block; float:right;">09:40PM</span>
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!--chat_area-->
+
+						<div class="message_write">
+							<textarea class="form-control" placeholder="type a message"></textarea>
+							<div class="chat_bottom"><a href="#" class="pull-left upload_btn"><i class="fa fa-paperclip fa-2x" aria-hidden="true"></i> Add Files</a>
+								<a href="#" class="pull-right btn btn-primary">Send</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--message_section-->
+
+				<div class="col-sm-3 hidden-xs chat_sidebar">
+					<div class="row" style="text-align: center">
+						
+					</div>
+				</div>
+				<!--Ads_sidebar-->
+			</div>
+		</div>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.autosize/3.0.20/autosize.min.js"></script>
+
+	<script>
+		autosize(document.querySelector('textarea'));
+	</script>
+</body>
+
+</html>
